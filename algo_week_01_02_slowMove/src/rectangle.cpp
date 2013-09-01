@@ -10,7 +10,7 @@
 
 Rectangle::Rectangle() {
     
-    //ofSetRectMode(OF_RECTMODE_CENTER);
+    ofSetRectMode(OF_RECTMODE_CENTER);
     pos.x = 30;
     pos.y = ofGetWindowHeight() / 2;
     

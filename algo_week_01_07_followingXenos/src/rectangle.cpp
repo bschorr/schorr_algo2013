@@ -11,7 +11,7 @@
 Rectangle::Rectangle() {
     
     ofSetRectMode(OF_RECTMODE_CENTER);
-    catchUpSpeed = ofRandom(0.01f, 0.1f);
+    catchUpSpeed = 0.2;
     
     
 }

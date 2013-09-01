@@ -38,9 +38,9 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    myRect.draw();
     ofSetColor(255);
-    ofDrawBitmapString(ofToString(pct), ofPoint (10, 10));
+    myRect.draw();
+    //ofDrawBitmapString(ofToString(pct), ofPoint (10, 10));
 
 }
 

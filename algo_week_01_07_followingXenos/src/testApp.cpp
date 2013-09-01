@@ -18,7 +18,7 @@ void testApp::setup(){
     
     myRect[i].interpolateByPct(0.0f);
         
-    myRect[i].color = ofColor (ofRandom(255), ofRandom(255), ofRandom(255));
+    myRect[i].color = ofColor (i*12);
     
     pct = 0;
         
@@ -38,8 +38,16 @@ void testApp::update(){
     
     for (int i = 0; i < NUM ; i++) {
 
-    myRect[i].xenoToPoint(mouseX, mouseY);
-    
+        
+        if (i == 0) {
+            
+        myRect[i].xenoToPoint(mouseX, mouseY);
+            
+        } else {
+            
+        myRect[i].xenoToPoint(myRect[i-1].pos.x, myRect[i-1].pos.y);
+            
+        }
     }
 }
 

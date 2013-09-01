@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "algo_week_01_01_inclassXeno.app"
-               BlueprintName = "algo_week_01_06_multipleXenos"
-               ReferencedContainer = "container:algo_week_01_06_multipleXenos.xcodeproj">
+               BuildableName = "algo_week_01_06_multipleXenos.app"
+               BlueprintName = "algo_week_01_07_followingXenos"
+               ReferencedContainer = "container:algo_week_01_07_followingXenos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_01_inclassXeno.app"
-            BlueprintName = "algo_week_01_06_multipleXenos"
-            ReferencedContainer = "container:algo_week_01_06_multipleXenos.xcodeproj">
+            BuildableName = "algo_week_01_06_multipleXenos.app"
+            BlueprintName = "algo_week_01_07_followingXenos"
+            ReferencedContainer = "container:algo_week_01_07_followingXenos.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_01_inclassXeno.app"
-            BlueprintName = "algo_week_01_06_multipleXenos"
-            ReferencedContainer = "container:algo_week_01_06_multipleXenos.xcodeproj">
+            BuildableName = "algo_week_01_06_multipleXenos.app"
+            BlueprintName = "algo_week_01_07_followingXenos"
+            ReferencedContainer = "container:algo_week_01_07_followingXenos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_01_inclassXeno.app"
-            BlueprintName = "algo_week_01_06_multipleXenos"
-            ReferencedContainer = "container:algo_week_01_06_multipleXenos.xcodeproj">
+            BuildableName = "algo_week_01_06_multipleXenos.app"
+            BlueprintName = "algo_week_01_07_followingXenos"
+            ReferencedContainer = "container:algo_week_01_07_followingXenos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

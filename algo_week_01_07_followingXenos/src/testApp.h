@@ -3,7 +3,7 @@
 #include "ofMain.h"
 #include "rectangle.h"
 
-#define NUM 10
+#define NUM 20
 
 class testApp : public ofBaseApp{
 
