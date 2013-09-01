@@ -17,33 +17,28 @@ Rectangle::Rectangle() {
 }
 
 void Rectangle::update() {
-    
-  //  pos.x = pos.x + ofRandom(-10, 10);
-    
+        
 }
 
 void Rectangle::draw() {
     
     ofSetColor(color);
-    ofRect(pos.x, pos.y, 20, 20);
     
+    //ofRect(0, 0, 20, 20);
+    ofRotate(angleInDegrees);
+    ofTriangle(0, 10, 0, -10, 25, 0);
+    //float angleInDegrees = atan2(deltaY, deltaX) * 180 / PI
     
 }
 
-void Rectangle::interpolateByPct (float myPct) {
-    
-    //pct = myPct;
-    
-    pct = powf(myPct, 2);
-    
-    pos.x = (1-pct) * posa.x + pct * posb.x;
-    pos.y = (1-pct) * posa.y + pct * posb.y;
-}
 
 void Rectangle::xenoToPoint(float catchX, float catchY){
     
-    //float catchUpSpeed = 0.03f;
     pos.x = catchUpSpeed * catchX + (1-catchUpSpeed) * pos.x;
     pos.y = catchUpSpeed * catchY + (1-catchUpSpeed) * pos.y;
+    float deltaY = catchY - pos.y;
+    float deltaX = catchX - pos.x;
+    angleInDegrees = atan2(deltaY, deltaX) * 180 / PI;
+
     
 }

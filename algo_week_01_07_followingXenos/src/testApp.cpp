@@ -5,36 +5,16 @@ void testApp::setup(){
     
     ofSetVerticalSync(true);
     
-    //myRect.pos.x = ofGetWindowWidth() / 2;
-    //myRect.pos.y = ofGetWindowWidth() / 2;
     
     for (int i = 0; i < NUM ; i++) {
-    
-    myRect[i].posa.x = 10;
-    myRect[i].posa.y = 100;
-    
-    myRect[i].posb.x = 500;
-    myRect[i].posb.y = 540;
-    
-    myRect[i].interpolateByPct(0.0f);
         
     myRect[i].color = ofColor (i*12);
-    
-    pct = 0;
-        
+            
     }
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-//    pct += 0.01f;
-//    
-//    if (pct > 1) {
-//        pct = 0;
-//    }
-//    
-//    myRect.interpolateByPct(pct);
-//
     
     for (int i = 0; i < NUM ; i++) {
 
@@ -57,13 +37,16 @@ void testApp::draw(){
     ofBackground(255);
     
     for (int i = 0; i < NUM ; i++) {
-
+    
+    ofPushMatrix();
+    ofTranslate(myRect[i].pos.x, myRect[i].pos.y);
     myRect[i].draw();
+        
+    ofPopMatrix();
         
     }
     
     ofSetColor(255);
-    ofDrawBitmapString(ofToString(pct), ofPoint (10, 10));
 
 }
 
@@ -79,9 +62,6 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-
-    //pct = (float)y / ofGetWindowHeight();
-    //myRect.interpolateByPct(pct);
 
 }
 

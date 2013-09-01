@@ -17,9 +17,7 @@ Rectangle::Rectangle() {
 }
 
 void Rectangle::update() {
-    
-  //  pos.x = pos.x + ofRandom(-10, 10);
-    
+        
 }
 
 void Rectangle::draw() {
@@ -28,16 +26,6 @@ void Rectangle::draw() {
     ofRect(pos.x, pos.y, 20, 20);
     
     
-}
-
-void Rectangle::interpolateByPct (float myPct) {
-    
-    //pct = myPct;
-    
-    pct = powf(myPct, 2);
-    
-    pos.x = (1-pct) * posa.x + pct * posb.x;
-    pos.y = (1-pct) * posa.y + pct * posb.y;
 }
 
 void Rectangle::xenoToPoint(float catchX, float catchY){

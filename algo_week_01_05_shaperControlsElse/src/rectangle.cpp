@@ -27,15 +27,6 @@ void Rectangle::draw() {
     
 }
 
-void Rectangle::interpolateByPct (float myPct) {
-    
-    //pct = myPct;
-    
-    pct = powf(myPct, 2);
-    
-    pos.x = (1-pct) * posa.x + pct * posb.x;
-    pos.y = (1-pct) * posa.y + pct * posb.y;
-}
 
 void Rectangle::xenoToPoint(float catchX, float catchY){
     
@@ -49,8 +40,6 @@ void Rectangle::xenoToPoint(float catchX, float catchY){
     ofColor color;    
     color.setHsb(size, 255, 255);
     ofSetColor(color);
-    
-    //ofFill();
-    
+        
     
 }

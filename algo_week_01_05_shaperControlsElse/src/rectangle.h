@@ -23,9 +23,7 @@ public:
     ofPoint posb;
     float pct;
     float size;
-    
-    void interpolateByPct (float myPct);
-    
+        
     void xenoToPoint (float catchX, float catchY);
     
     

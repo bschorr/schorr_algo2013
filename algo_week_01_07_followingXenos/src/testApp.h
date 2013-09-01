@@ -23,6 +23,4 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
         Rectangle myRect [NUM];
     
-    
-    float pct;
 };
