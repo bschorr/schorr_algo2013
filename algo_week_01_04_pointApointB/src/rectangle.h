@@ -21,9 +21,6 @@ public:
     
     ofPoint finalPos;
     ofPoint pos;
-    float pct;
-    
-    void interpolateByPct (float myPct);
     
     void xenoToPoint (float catchX, float catchY);
     

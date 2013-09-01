@@ -20,7 +20,6 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
         Rectangle myRect;
-    float pct;
 
     // speed in in/s is 22.57 in/s
     // speed in mph is 9874 mph

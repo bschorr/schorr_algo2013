@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "algo_week_01_02_slowMove.app"
-               BlueprintName = "algo_week_01_02_fastMove"
-               ReferencedContainer = "container:algo_week_01_02_fastMove.xcodeproj">
+               BuildableName = "algo_week_01_02_fastMove.app"
+               BlueprintName = "algo_week_01_03_fastMove"
+               ReferencedContainer = "container:algo_week_01_03_fastMove.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_02_slowMove.app"
-            BlueprintName = "algo_week_01_02_fastMove"
-            ReferencedContainer = "container:algo_week_01_02_fastMove.xcodeproj">
+            BuildableName = "algo_week_01_02_fastMove.app"
+            BlueprintName = "algo_week_01_03_fastMove"
+            ReferencedContainer = "container:algo_week_01_03_fastMove.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_02_slowMove.app"
-            BlueprintName = "algo_week_01_02_fastMove"
-            ReferencedContainer = "container:algo_week_01_02_fastMove.xcodeproj">
+            BuildableName = "algo_week_01_02_fastMove.app"
+            BlueprintName = "algo_week_01_03_fastMove"
+            ReferencedContainer = "container:algo_week_01_03_fastMove.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_02_slowMove.app"
-            BlueprintName = "algo_week_01_02_fastMove"
-            ReferencedContainer = "container:algo_week_01_02_fastMove.xcodeproj">
+            BuildableName = "algo_week_01_02_fastMove.app"
+            BlueprintName = "algo_week_01_03_fastMove"
+            ReferencedContainer = "container:algo_week_01_03_fastMove.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

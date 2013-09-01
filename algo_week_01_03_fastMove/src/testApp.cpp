@@ -5,21 +5,11 @@ void testApp::setup(){
     
     ofSetVerticalSync(true);
     
-    //myRect.pos.x = ofGetWindowWidth() / 2;
-    //myRect.pos.y = ofGetWindowWidth() / 2;
-    
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-//    pct += 0.01f;
-//    
-//    if (pct > 1) {
-//        pct = 0;
-//    }
-//    
-//    myRect.interpolateByPct(pct);
-//
+
     myRect.update();
     
     
@@ -46,9 +36,6 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-
-    //pct = (float)y / ofGetWindowHeight();
-    //myRect.interpolateByPct(pct);
 
 }
 
