@@ -22,7 +22,7 @@ public:
     float size;
     ofVec2f pos;
     ofVec2f vel;
-    float gravity = _GRAVITY;
+    float gravity = 1.0f;
     
     
 };
