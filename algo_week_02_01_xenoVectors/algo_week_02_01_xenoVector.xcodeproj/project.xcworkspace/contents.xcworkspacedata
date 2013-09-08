@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:algo_week_01_01_inclassXeno.xcodeproj">
+      location = "self:algo_week_02_01_xenoVector.xcodeproj">
    </FileRef>
 </Workspace>

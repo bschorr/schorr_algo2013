@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
                BuildableName = "algo_week_01_01_inclassXeno.app"
-               BlueprintName = "algo_week_01_01_inclassXeno"
-               ReferencedContainer = "container:algo_week_01_01_inclassXeno.xcodeproj">
+               BlueprintName = "algo_week_02_01_xenoVector"
+               ReferencedContainer = "container:algo_week_02_01_xenoVector.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "algo_week_01_01_inclassXeno.app"
-            BlueprintName = "algo_week_01_01_inclassXeno"
-            ReferencedContainer = "container:algo_week_01_01_inclassXeno.xcodeproj">
+            BlueprintName = "algo_week_02_01_xenoVector"
+            ReferencedContainer = "container:algo_week_02_01_xenoVector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "algo_week_01_01_inclassXeno.app"
-            BlueprintName = "algo_week_01_01_inclassXeno"
-            ReferencedContainer = "container:algo_week_01_01_inclassXeno.xcodeproj">
+            BlueprintName = "algo_week_02_01_xenoVector"
+            ReferencedContainer = "container:algo_week_02_01_xenoVector.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "algo_week_01_01_inclassXeno.app"
-            BlueprintName = "algo_week_01_01_inclassXeno"
-            ReferencedContainer = "container:algo_week_01_01_inclassXeno.xcodeproj">
+            BlueprintName = "algo_week_02_01_xenoVector"
+            ReferencedContainer = "container:algo_week_02_01_xenoVector.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
