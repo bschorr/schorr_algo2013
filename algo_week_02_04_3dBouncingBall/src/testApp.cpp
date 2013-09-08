@@ -2,6 +2,8 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
+    
+    ofEnableAlphaBlending();
 
 }
 
@@ -14,8 +16,12 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    
+    cam.begin();
+
+    ofTranslate(0, 0, -1000);
     bouncingBall.draw();
+    
+    cam.end();
 
 }
 

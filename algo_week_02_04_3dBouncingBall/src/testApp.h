@@ -22,4 +22,5 @@ class testApp : public ofBaseApp{
     
     Ball bouncingBall;
 		
+    ofEasyCam cam;
 };

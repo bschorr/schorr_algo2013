@@ -16,10 +16,12 @@ public:
     void update();
     void draw();
     
-    ofVec2f pos;
+    ofVec3f pos;
     float xVelocity;
     float yVelocity;
+    float zVelocity;
     
+    float boxSize = 800;
     
     
     
