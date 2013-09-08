@@ -22,7 +22,10 @@ void Mover::update() {
     
     if (pos != prevPos) {
     prevPos = pos;
-    counter += 1;
+        if (counter < 255) {
+            
+        counter += 1;
+        }
     }
         
         
