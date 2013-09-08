@@ -13,8 +13,10 @@ void testApp::setup(){
     
     ofBackground(0);
     //ofEnableBlendMode (OF_BLENDMODE_ADD);
+    //CGDisplayHideCursor(0);
     ofSetBackgroundAuto(false);
     ofEnableSmoothing();
+    ofHideCursor();
     
 }
 
@@ -34,8 +36,8 @@ void testApp::draw(){
     
     //ofHideCursor();
     
-    //ofSetColor(0, 0, 0, 10);
-    //ofRect(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
+    ofSetColor(0, 0, 0, 10);
+    ofRect(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
     
     for( int i=0; i<moverList.size(); i++ ){
         moverList[i].draw();
@@ -44,6 +46,22 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+    if (key == ' '){
+        
+        for (int i = 0; i < moverList.size(); i++) {
+            
+            float angle = ofDegToRad(ofRandom(360));
+            float x = cos(angle);
+            float y = sin(angle);
+            
+            float mult = ofRandom(0.0f, 10.0f);
+            //float mult = 10.0f;
+            
+            moverList[i].velocity.set (x*mult, y*mult);
+                        
+        }
+    }
 
 }
 
