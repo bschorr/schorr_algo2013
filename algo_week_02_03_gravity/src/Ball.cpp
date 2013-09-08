@@ -11,7 +11,11 @@
 Ball::Ball () {
     
     pos.set(ofGetMouseX(), ofGetMouseY());
-    vel.set(ofRandom(-5, 5), 0);
+    //vel.set(ofRandom(-5, 5), 0);
+    //vel.set(ofGetPreviousMouseX()-ofGetMouseX(), ofGetPreviousMouseY()-ofGetMouseY());
+    
+    //cout << vel << endl;
+    
     size = 30;
     
     
@@ -30,8 +34,16 @@ void Ball::update() {
         
     }
     
-    if (pos.x > ofGetWindowWidth() - size || pos.x < size) {
+    if (pos.x > ofGetWindowWidth() - size) {
         
+        pos.x = ofGetWindowWidth() - size;
+        vel.x *= -0.5;
+        
+    }
+    
+    if (pos.x < size) {
+        
+        pos.x = size;
         vel.x *= -0.5;
         
     }

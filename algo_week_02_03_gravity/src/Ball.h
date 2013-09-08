@@ -24,5 +24,6 @@ public:
     ofVec2f vel;
     float gravity = 1.0f;
     
+    
 };
 

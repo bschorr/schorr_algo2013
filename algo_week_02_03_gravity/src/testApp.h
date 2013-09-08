@@ -24,4 +24,6 @@ class testApp : public ofBaseApp{
     
         vector<Ball> balls;
 		
+        ofVec2f vel;
+
 };

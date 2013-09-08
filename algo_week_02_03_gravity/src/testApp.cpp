@@ -16,6 +16,9 @@ void testApp::update(){
         
     }
     
+    cout << ofGetPreviousMouseY() << ", " << ofGetMouseY() << endl;
+    
+    vel.set (ofGetMouseX() - ofGetPreviousMouseX(), ofGetMouseY() - ofGetPreviousMouseY());
 
 }
 
@@ -59,6 +62,7 @@ void testApp::mousePressed(int x, int y, int button){
 void testApp::mouseReleased(int x, int y, int button){
 
     Ball newBall;
+    newBall.vel.set(vel);
     balls.push_back(newBall);
     
 }
