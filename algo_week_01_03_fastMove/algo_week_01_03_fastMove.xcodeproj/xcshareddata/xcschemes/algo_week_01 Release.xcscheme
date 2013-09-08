@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "algo_week_01_02_fastMove.app"
+               BuildableName = "algo_week_01_03_fastMove.app"
                BlueprintName = "algo_week_01_03_fastMove"
                ReferencedContainer = "container:algo_week_01_03_fastMove.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_02_fastMove.app"
+            BuildableName = "algo_week_01_03_fastMove.app"
             BlueprintName = "algo_week_01_03_fastMove"
             ReferencedContainer = "container:algo_week_01_03_fastMove.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_02_fastMove.app"
+            BuildableName = "algo_week_01_03_fastMove.app"
             BlueprintName = "algo_week_01_03_fastMove"
             ReferencedContainer = "container:algo_week_01_03_fastMove.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_01_02_fastMove.app"
+            BuildableName = "algo_week_01_03_fastMove.app"
             BlueprintName = "algo_week_01_03_fastMove"
             ReferencedContainer = "container:algo_week_01_03_fastMove.xcodeproj">
          </BuildableReference>

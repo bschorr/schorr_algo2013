@@ -2,7 +2,9 @@
 //  Mover.h
 //  Acceleration
 //
-//  Created by Charlie Whitney on 9/2/13.
+//  Created by Bernardo Santos Schorr on 9/8/13.
+//  Based in Code by Charlie Whitney
+//
 //
 //
 
