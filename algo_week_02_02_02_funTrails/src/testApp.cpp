@@ -36,6 +36,8 @@ void testApp::draw(){
     
     //ofHideCursor();
     
+    //ofSaveFrame();
+    
     ofSetColor(0, 0, 0, 10);
     ofRect(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
     
