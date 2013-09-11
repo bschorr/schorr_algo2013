@@ -20,13 +20,13 @@ Mover::Mover() {
 
 void Mover::update() {
     
-    if (pos != prevPos) {
+
     prevPos = pos;
         if (counter < 255) {
             
         counter += 1;
         }
-    }
+
         
         
     ofVec2f accel = (mousePos - pos) * 0.001f;
