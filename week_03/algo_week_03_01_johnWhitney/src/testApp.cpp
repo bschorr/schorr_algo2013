@@ -3,19 +3,38 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 
+    for ( int i = 0; i < 36; i++ ) {
+        
+        
+        float tempX = ofGetWindowWidth()/2 + 150 * cos(ofDegToRad(i*10));
+        float tempY = ofGetWindowHeight()/2 + 150 * sin(ofDegToRad(i*10));
+        
+        circles.push_back(Circle ( ofVec2f (tempX, tempY), 150.0f, 10, (i*10)+ (i * 5) ));
+        
+        
+    }
+    
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
     
-    circle.update();
+    for ( int i = 0; i < 36; i++ ) {
+    
+        circles[i].update();
+    
+    }
 
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
 
-    circle.draw();
+    for ( int i = 0; i < 36; i++ ) {
+        
+        circles[i].draw();
+        
+    }
     
 }
 

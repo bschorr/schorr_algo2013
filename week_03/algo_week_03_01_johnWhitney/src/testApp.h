@@ -20,6 +20,6 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        Circle circle = Circle(ofVec2f(500, 500), 100, 20, 0);
+        vector <Circle> circles;
 		
 };
