@@ -1,0 +1,20 @@
+#OSX
+.DS_Store
+*.swp
+*~.nib
+# Thumbnails
+._*
+
+# OF-specific ignore patterns
+
+openFrameworks.a
+openFrameworksDebug.a
+openFrameworksUniversal.a
+
+#rule to avoid non-official addons going into git
+#see addons/.gitignore
+addons/*
+
+#rule to avoid non-official apps going into git
+#see apps/.gitignore
+apps/*
