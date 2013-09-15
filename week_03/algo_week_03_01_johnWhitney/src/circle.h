@@ -19,6 +19,7 @@ public:
     Circle (ofVec2f _rotCenter, float _rotRadius, float _circRadius, float _degrees);
     
     ofVec2f circlePos;
+    ofVec2f prevPos;
     ofVec2f rotCenter;
     float circRadius;
     float rotRadius;

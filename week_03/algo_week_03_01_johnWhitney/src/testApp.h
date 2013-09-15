@@ -21,5 +21,6 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
         vector <Circle> circles;
+        int numCircles;
 		
 };

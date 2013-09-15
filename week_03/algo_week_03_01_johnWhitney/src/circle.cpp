@@ -20,6 +20,8 @@ Circle::Circle (ofVec2f _rotCenter, float _rotRadius, float _circRadius, float _
 
 void Circle::update() {
     
+    prevPos = circlePos;
+    
     circlePos.x = rotCenter.x + rotRadius * cos (ofDegToRad( degrees ) );
     circlePos.y = rotCenter.y + rotRadius * sin (ofDegToRad( degrees ) );
     
@@ -29,7 +31,9 @@ void Circle::update() {
 
 void Circle::draw() {
 
-    ofCircle ( circlePos, circRadius ) ;
+    //ofRect ( circlePos, circRadius, circRadius ) ;
+    //ofCircle ( circlePos, circRadius ) ;
+    ofLine (prevPos, circlePos);
     
 }
 
