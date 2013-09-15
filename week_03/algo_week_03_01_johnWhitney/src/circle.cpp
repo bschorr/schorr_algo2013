@@ -14,6 +14,7 @@ Circle::Circle (ofVec2f _rotCenter, float _rotRadius, float _circRadius, float _
     rotRadius = _rotRadius;
     circRadius = _circRadius;
     degrees = _degrees;
+    speed = 1;
     
 }
 
@@ -25,7 +26,7 @@ void Circle::update() {
     circlePos.x = rotCenter.x + rotRadius * cos (ofDegToRad( degrees ) );
     circlePos.y = rotCenter.y + rotRadius * sin (ofDegToRad( degrees ) );
     
-    degrees ++;
+    degrees += speed;
     
 }
 

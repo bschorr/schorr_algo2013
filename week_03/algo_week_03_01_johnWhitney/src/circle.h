@@ -24,6 +24,7 @@ public:
     float circRadius;
     float rotRadius;
     float degrees;
+    float speed;
     
     void update ();
     void draw ();

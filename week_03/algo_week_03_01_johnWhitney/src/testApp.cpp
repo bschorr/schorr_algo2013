@@ -6,8 +6,9 @@ void testApp::setup(){
     numCircles = 1;
     ofSetBackgroundAuto(false);
     ofBackground(0);
+    ofEnableSmoothing();
     
-    for ( int i = 0; i < 360; i += numCircles ) {
+    for ( float i = 0; i < 360; i += numCircles ) {
         
         
         float tempX = ofGetWindowWidth()/2 + 150 * cos(ofDegToRad(i));
@@ -37,7 +38,16 @@ void testApp::draw(){
     ofSetColor(0, 0, 0, 5);
     ofRect ( 0, 0, ofGetWindowWidth(), ofGetWindowHeight() );
     
-    ofSetColor(255);
+    //ofSetColor(255);
+        
+    ofColor color;
+    float hue = (int(ofGetElapsedTimeMillis())/10)%255;
+    cout << hue << endl;
+    //cout << ofGetElapsedTimef() << endl;
+    
+    color.setHsb(hue, 255, 255);
+    ofSetColor(color);
+    
     for ( int i = 0; i < circles.size(); i++ ) {
         
         circles[i].draw();
@@ -49,17 +59,137 @@ void testApp::draw(){
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
     
-    if (key == OF_KEY_UP) {
+    if (key == '0') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees = 0;
+            
+        }
+        
+    }
+    
+    if (key == '1') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees = i * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == '2') {
         
         for ( int i = 0; i < circles.size(); i++ ) {
         
-            circles[i].degrees += 0.1f * i;
+            circles[i].degrees += i * 2 * numCircles;
         
         }
 
     }
     
+    if (key == '3') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees += i * 3 * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == '4') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees += i * 4 * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == '5') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees += i * 5 * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == '6') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees += i * 6 * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == '7') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees += i * 7 * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == '8') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees += i * 8 * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == '9') {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees += i * 9 * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == OF_KEY_UP) {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].speed += 0.01f * i * numCircles;
+            
+        }
+        
+    }
+    
     if (key == OF_KEY_DOWN) {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].speed -= 0.01f * i * numCircles;
+            
+        }
+        
+    }
+    
+    if (key == OF_KEY_LEFT) {
+        
+        for ( int i = 0; i < circles.size(); i++ ) {
+            
+            circles[i].degrees += 0.1f * i;
+            
+        }
+        
+    }
+    
+    if (key == OF_KEY_RIGHT) {
         
         for ( int i = 0; i < circles.size(); i++ ) {
             
@@ -73,11 +203,12 @@ void testApp::keyPressed(int key){
         
         for ( int i = 0; i < circles.size(); i++ ) {
             
-            circles[i].degrees = i * numCircles;
+            circles[i].speed = 1;
             
         }
         
     }
+    
 
 }
 
