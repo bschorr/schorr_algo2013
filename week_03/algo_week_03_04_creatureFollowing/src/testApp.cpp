@@ -2,28 +2,15 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    
-    numFish = 50;
 
     ofSetRectMode(OF_RECTMODE_CENTER);
-     
-    for (int i = 0; i < numFish; i++ ) {
-        
-        myFishes.push_back(Fish (ofPoint (ofRandom(ofGetWindowWidth()),ofRandom(ofGetWindowHeight())), ofRandom(25, 40), ofRandom(0.1, 0.5)));
-        
-    }
-    
     
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
     
-    for (int i = 0; i < numFish; i++ ) {
-
-    myFishes[i].update();
-        
-    }
+    myFish.update();
 
 }
 
@@ -31,12 +18,10 @@ void testApp::update(){
 void testApp::draw(){
     
     ofBackground(0);
-    
-    for (int i = 0; i < numFish; i++ ) {
-        
-        myFishes[i].draw();
-        
-    }
+
+        myFish.xenoToPoint(mouseX, mouseY);
+        myFish.draw();
+
     
 }
 

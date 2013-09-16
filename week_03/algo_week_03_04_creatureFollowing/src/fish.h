@@ -19,6 +19,10 @@ public:
     
     void update ();
     void draw ();
+    void xenoToPoint(float catchX, float catchY);
+    float angleInDegrees;
+    float prevAngleInDegrees;
+    float catchUpSpeed;
     
     ofPoint pos;
     float size;
