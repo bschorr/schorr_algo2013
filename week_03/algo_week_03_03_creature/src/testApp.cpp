@@ -8,21 +8,21 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
+    
+    myFish.update();
 
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
     
+    ofBackground(0);
+    
+    myFish.draw();
+    
     vector<float> posY;
     float tempMult = ofMap (mouseY, 0, ofGetWindowHeight(), 0, 1);
     sinMult += tempMult;
-    
-//    for (int i = 0; i < 11; i++) {
-//        
-//        posY.push_back(sin(sinMult + (i * 6)) * 4);
-//        
-//    }
     
     ofPushMatrix(); {
         
@@ -33,7 +33,7 @@ void testApp::draw(){
             float rectH = abs (sin (i * PI) * 30);
             if ( rectH < 5 ) rectH = 5;
             
-            float motionMult = ofClamp(i, 0.4, 1.1);
+            float motionMult = ofMap(i, 0, 1.3, 0.4, 1);
             
             float posY = sin(sinMult + (1.3 - i)) * 4 * motionMult;
             

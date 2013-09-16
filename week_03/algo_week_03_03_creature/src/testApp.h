@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "fish.h"
 
 class testApp : public ofBaseApp{
 
@@ -20,5 +21,7 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
         float sinMult;
+    
+        Fish myFish =  Fish (ofPoint (300, 300), ofVec2f (1.3, 30), 0.25);
 		
 };
