@@ -15,27 +15,33 @@ void testApp::update(){
 void testApp::draw(){
     
     vector<float> posY;
+    float tempMult = ofMap (mouseY, 0, ofGetWindowHeight(), 0, 1);
+    sinMult += tempMult;
     
-    for (int i = 0; i < 11; i++) {
-        
-        posY.push_back(sin(ofGetElapsedTimeMillis()/50 + (i * 6)) * 4);
-        
-    }
+//    for (int i = 0; i < 11; i++) {
+//        
+//        posY.push_back(sin(sinMult + (i * 6)) * 4);
+//        
+//    }
     
     ofPushMatrix(); {
         
         ofTranslate (ofGetWindowWidth()/2, ofGetWindowHeight()/2);
-    
-        ofRect(0, posY[0], 10, 30);
-        ofRect(15, posY[1], 10, 40);
-        ofRect(30, posY[2], 10, 60);
-        ofRect(45, posY[3], 10, 50);
-        ofRect(60, posY[4], 10, 40);
-        ofRect(75, posY[5], 10, 30);
-        ofRect(90, posY[6], 10, 20);
-        ofRect(105, posY[7], 10, 30);
-        ofRect(120, posY[8], 10, 45);
-        ofRect(135, posY[9], 10, 60);
+        
+        for ( float i = 0.0f; i < 1.3; i += 0.1 ) {
+            
+            float rectH = abs (sin (i * PI) * 30);
+            if ( rectH < 5 ) rectH = 5;
+            
+            float motionMult = ofClamp(i, 0.4, 1.1);
+            
+            float posY = sin(sinMult + (1.3 - i)) * 4 * motionMult;
+            
+            
+            ofRect((i * 50), posY, 3, rectH);
+            
+            
+        }
 
         
     }ofPopMatrix();

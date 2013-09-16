@@ -39,15 +39,15 @@ void testApp::draw(){
     ofRect ( 0, 0, ofGetWindowWidth(), ofGetWindowHeight() );
     
     //ofSetColor(255);
-        
+    
+    
     ofColor color;
     float hue = (int(ofGetElapsedTimeMillis())/10)%255;
-    cout << hue << endl;
-    //cout << ofGetElapsedTimef() << endl;
     
     color.setHsb(hue, 255, 255);
     ofSetColor(color);
     
+     
     for ( int i = 0; i < circles.size(); i++ ) {
         
         circles[i].draw();
