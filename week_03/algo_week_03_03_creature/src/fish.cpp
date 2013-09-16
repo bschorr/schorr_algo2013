@@ -8,16 +8,16 @@
 
 #include "fish.h"
 
-Fish::Fish (ofPoint _pos, ofVec2f _size, float _speed){
+Fish::Fish (ofPoint _pos, float _size, float _speed){
     
     pos = _pos;
     size = _size;
     speed = _speed;
     
-    for ( float i = 0.0f; i < size.x; i += 0.1 ) {
+    for ( int i = 0; i < 13; i ++ ) {
      
-        float tempRectH = abs (sin (i * PI) * size.y);
-        if ( tempRectH < 5 ) tempRectH = 5;
+        float tempRectH = abs (sin (0.1 * i * PI) * size);
+        if ( tempRectH < size/6 ) tempRectH = size/6;
         
         rectH.push_back(tempRectH);
         
@@ -31,12 +31,14 @@ void Fish::update () {
     
     sinMult += speed;
     posY.clear();
+    pos.x -= speed * 10;
+    if ( pos.x < - size*3 ) pos.x = ofGetWindowWidth() + (size *3);
             
-    for ( float i = 0.0f; i < size.x; i += 0.1 ) {
+    for ( int i = 0; i < 13; i ++ ) {
             
-        float motionMult = ofMap(i, 0, size.x, size.x * 0.3, size.x * 0.6);
+        float motionMult = ofMap(i, 0, 13, 1.5, 4);
             
-        float tempPosY = sin(sinMult + (size.x - i)) * 4 * motionMult;
+        float tempPosY = sin(sinMult + (2.5 - (i * 0.2f) )) * motionMult;
             
         posY.push_back(tempPosY);
             
@@ -52,10 +54,10 @@ void Fish::draw () {
         
         ofTranslate (pos.x, pos.y);
         
-        for ( float i = 0.0f; i < size.x; i += 0.1 ) {
+        for ( int i = 0; i < 13; i ++ ) {
         
-            int index = int (i*10);
-            ofRect ((i * 50), posY[index], 3, rectH[index]);
+            //int index = int (i*10);
+            ofRect ((i * (size/6)), posY[i], size/10, rectH[i]);
         
         
         }
