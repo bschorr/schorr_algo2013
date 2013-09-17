@@ -1,0 +1,3 @@
+So... I spent all my time in exercises 03_01, 03_03 and 03_04...
+
+Didn't have time to work on this one. Rain check.
