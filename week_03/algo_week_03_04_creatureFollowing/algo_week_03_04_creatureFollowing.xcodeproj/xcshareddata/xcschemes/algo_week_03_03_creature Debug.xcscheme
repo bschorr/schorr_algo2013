@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "algo_week_03_03_creature.app"
+               BuildableName = "algo_week_03_04_creatureFollowing.app"
                BlueprintName = "algo_week_03_04_creatureFollowing"
                ReferencedContainer = "container:algo_week_03_04_creatureFollowing.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_03_03_creature.app"
+            BuildableName = "algo_week_03_04_creatureFollowing.app"
             BlueprintName = "algo_week_03_04_creatureFollowing"
             ReferencedContainer = "container:algo_week_03_04_creatureFollowing.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_03_03_creature.app"
+            BuildableName = "algo_week_03_04_creatureFollowing.app"
             BlueprintName = "algo_week_03_04_creatureFollowing"
             ReferencedContainer = "container:algo_week_03_04_creatureFollowing.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "algo_week_03_03_creature.app"
+            BuildableName = "algo_week_03_04_creatureFollowing.app"
             BlueprintName = "algo_week_03_04_creatureFollowing"
             ReferencedContainer = "container:algo_week_03_04_creatureFollowing.xcodeproj">
          </BuildableReference>
