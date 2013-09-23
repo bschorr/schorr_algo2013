@@ -91,6 +91,4 @@ void Fish::xenoToPoint(float catchX, float catchY){
     angleInDegrees = angleInDegrees * 0.2 + prevAngleInDegrees * 0.8;
     prevAngleInDegrees = angleInDegrees;
     
-    cout << angleInDegrees << endl;
-    
 }
