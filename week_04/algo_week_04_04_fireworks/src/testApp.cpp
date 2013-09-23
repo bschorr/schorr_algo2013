@@ -24,17 +24,20 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
     
-    float sorting = ofRandom(20);
+    float sorting = ofRandom(30);
     
-    if (fireworks.size() < 2 && sorting < 1) {
+    if (fireworks.size() < 5 && sorting < 1) {
         
     fireworks.push_back(Firework());
 
     }
     
+    int counter;
     
     for( vector<Firework>::iterator it=fireworks.begin(); it!=fireworks.end(); ){
-        it->update();
+        float noise = ofNoise(ofGetElapsedTimef()+ (counter * 100)) * 15.0;
+        it->update(noise);
+        counter++;
         
         if( it->bIsDead ){
             it = fireworks.erase(it);

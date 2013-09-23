@@ -14,7 +14,7 @@ Firework::Firework() {
     exploded = false;
     dieCount = 255;
     
-    posX = ofRandom(ofGetWindowWidth()/2 - 50, ofGetWindowWidth()/2 + 50);
+    posX = ofRandom(ofGetWindowWidth()/2 - 150, ofGetWindowWidth()/2 + 150);
     
     vel.x = ofRandom(-1.0, 1.0);
     vel.y = ofRandom(-9.0, -11.0);
@@ -29,7 +29,9 @@ Firework::Firework() {
     
 }
 
-void Firework::update() {
+void Firework::update(float _noise) {
+    
+    noise = _noise;
     
     if (!exploded) {
         
@@ -39,12 +41,17 @@ void Firework::update() {
     
     
     for( vector<Mover>::iterator it=moverList.begin(); it!=moverList.end(); ){
+        
         it->update();
         
         
         if (vel.y >= 0 && !exploded) {
         
         it->explode();
+            
+        } else if (!exploded) {
+            
+        it->pos.x += cos(noise) * ofMap(vel.y, 0, -11.0, 0, 2.0);
             
         }
         

@@ -15,7 +15,7 @@ class Firework {
 public:
     
     Firework();
-    void update();
+    void update(float _noise);
     void draw();
     
     vector <Mover> moverList;
@@ -25,6 +25,7 @@ public:
     bool exploded;
     bool bIsDead;
     float dieCount;
+    float noise;
     
     
     
