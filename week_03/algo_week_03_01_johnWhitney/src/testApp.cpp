@@ -19,6 +19,10 @@ void testApp::setup(){
         
     }
     
+    click = false;
+    ofSetLineWidth(1);
+    isExporting = false;
+    
 }
 
 //--------------------------------------------------------------
@@ -35,6 +39,18 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
+
+    if (isExporting) {
+    
+        if (click) {
+            click = !click;
+            ofBeginSaveScreenAsPDF("screenshot-"+ofGetTimestampString()+".pdf", false);
+        
+        }
+        
+    }
+
+    //ofSetColor (255);
     ofSetColor(0, 0, 0, 5);
     ofRect ( 0, 0, ofGetWindowWidth(), ofGetWindowHeight() );
     
@@ -46,7 +62,7 @@ void testApp::draw(){
     
     color.setHsb(hue, 255, 255);
     ofSetColor(color);
-    
+    //ofSetColor(0);
      
     for ( int i = 0; i < circles.size(); i++ ) {
         
@@ -54,10 +70,14 @@ void testApp::draw(){
         
     }
     
+    if (isExporting) ofEndSaveScreenAsPDF();
+    
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+    click = true;
     
     if (key == '0') {
         

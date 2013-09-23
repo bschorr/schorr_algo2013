@@ -23,4 +23,6 @@ class testApp : public ofBaseApp{
         vector <Circle> circles;
         float numCircles;
 		
+    bool click;
+    bool isExporting;
 };
