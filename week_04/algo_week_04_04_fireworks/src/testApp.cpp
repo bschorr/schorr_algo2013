@@ -13,17 +13,36 @@ void testApp::setup(){
     ofEnableSmoothing();
     ofHideCursor();
     ofEnableAlphaBlending();
+    ofSetLineWidth(2);
     
+    for (int i =0; i < 4; i++){
     fireworks.push_back(Firework());
-    
+        
+    }
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+    
+    float sorting = ofRandom(20);
+    
+    if (fireworks.size() < 2 && sorting < 1) {
         
-        
-    fireworks[0].update();
+    fireworks.push_back(Firework());
 
+    }
+    
+    
+    for( vector<Firework>::iterator it=fireworks.begin(); it!=fireworks.end(); ){
+        it->update();
+        
+        if( it->bIsDead ){
+            it = fireworks.erase(it);
+        
+        }else {
+            it++;
+        }
+    }
 }
 
 //--------------------------------------------------------------
@@ -33,12 +52,14 @@ void testApp::draw(){
     
     //ofSaveFrame();
     
-    ofSetColor(0, 0, 0, 10);
+    ofSetColor(0, 0, 0, 30);
     ofRect(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
     
-    for( int i=0; i<fireworks.size(); i++ ){
-        fireworks[i].draw();
+    for( vector<Firework>::iterator it=fireworks.begin(); it!=fireworks.end(); ){
+        it->draw();
+        it++;
     }
+
 }
 
 //--------------------------------------------------------------

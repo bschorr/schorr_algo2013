@@ -8,20 +8,35 @@
 
 #include "Mover.h"
 
-Mover::Mover(float _posx, ofVec2f _vel, float _grav) {
+Mover::Mover(float _posx, ofVec2f _vel, ofVec2f _accel) {
     
     pos.x = _posx;
     pos.y = ofGetWindowHeight();
     
-    gravity = _grav;
+    accel = _accel;
     velocity = _vel;
     
+    exploded = false;
+        
 }
 
 void Mover::update() {
     
+    if (exploded) {
+        
+        if (abs(velocity.length()) < 2.0) {
+            exploded = false;
+        }
+        accel = (explodePos - pos) * 0.001f;
+    
+    } else {
+        
+        accel = ofVec2f (0, 0.1);
+        
+    }
+    
     prevPos = pos;
-    velocity.y += gravity;
+    velocity += accel;
     pos += velocity;
     
     //velocity *= 0.97;
@@ -30,9 +45,7 @@ void Mover::update() {
 
 void Mover::draw() {
     //ofCircle( pos, 1 );
-    
-    ofSetLineWidth(1);
-    
+        
     if (pos != prevPos) {
     ofLine(prevPos, pos);        
     }
@@ -41,11 +54,14 @@ void Mover::draw() {
 
 void Mover::explode() {
     
+    exploded = true;
+    explodePos = pos;
+    
     float angle = ofDegToRad(ofRandom(360));
     float x = cos(angle);
     float y = sin(angle);
     
-    float mult = ofRandom(0.0f, 1.5f);
+    float mult = ofRandom(3.0f, 5.0f);
 
     velocity.set (x*mult, y*mult);    
     

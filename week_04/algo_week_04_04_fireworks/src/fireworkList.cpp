@@ -10,19 +10,21 @@
 
 Firework::Firework() {
     
-    gravity = 0.01;
+    accel = ofVec2f (0, 0.1);
     exploded = false;
     dieCount = 255;
     
     posX = ofRandom(ofGetWindowWidth()/2 - 50, ofGetWindowWidth()/2 + 50);
     
     vel.x = ofRandom(-1.0, 1.0);
-    vel.y = ofRandom(-3.0, -4.0);
+    vel.y = ofRandom(-9.0, -11.0);
     
-    for( int i=0; i<200; i++){
-        Mover myMover = Mover (posX, vel, gravity);
+    for( int i=0; i<100; i++){
+        Mover myMover = Mover (posX, vel, accel);
         moverList.push_back( myMover );
     }
+    
+    bIsDead = false;
     
     
 }
@@ -31,19 +33,24 @@ void Firework::update() {
     
     if (!exploded) {
         
-    vel.y += gravity;
+    vel += accel;
     
     }
     
-    for (int i = 0; i < moverList.size(); i++) {
+    
+    for( vector<Mover>::iterator it=moverList.begin(); it!=moverList.end(); ){
+        it->update();
         
-        moverList[i].update();
         
         if (vel.y >= 0 && !exploded) {
         
-        moverList[i].explode();
+        it->explode();
             
         }
+        
+        it++;
+
+
     }
     
     if (vel.y >= 0 && !exploded) {
@@ -54,7 +61,13 @@ void Firework::update() {
     
     if (exploded && dieCount > 0) {
         
-        dieCount -= 1.25;
+        dieCount -= 4;
+        
+    }
+    
+    if (dieCount < 0) {
+        
+        bIsDead = true;
         
     }
     
@@ -64,10 +77,12 @@ void Firework::update() {
 void Firework::draw() {
     
     
-    ofSetColor(dieCount);
-    for (int i = 0; i < moverList.size(); i++) {
-     
-    moverList[i].draw();
+    ofSetColor(255, dieCount);
+    
+    
+    for( vector<Mover>::iterator it=moverList.begin(); it!=moverList.end(); ){
+        it->draw();
+        it++;
         
     }
 

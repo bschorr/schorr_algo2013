@@ -13,15 +13,18 @@
 class Mover {
   public:
     Mover();
-    Mover(float _posx, ofVec2f _vel, float _grav);
+    Mover(float _posx, ofVec2f _vel, ofVec2f _accel);
     
     void update();
     void draw();
     void explode();
     
-    ofPoint     pos, mousePos;
+    ofPoint     pos;
+    ofPoint     explodePos;
     ofPoint     prevPos;
-    ofVec2f     velocity, accel;
-    float       gravity;
+    ofVec2f     velocity;
+    ofVec2f     accel;
+    
+    bool exploded;
     
 };

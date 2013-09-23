@@ -21,9 +21,11 @@ public:
     vector <Mover> moverList;
     ofVec2f vel;
     float posX;
-    float gravity;
+    ofVec2f accel;
     bool exploded;
+    bool bIsDead;
     float dieCount;
+    
     
     
     
