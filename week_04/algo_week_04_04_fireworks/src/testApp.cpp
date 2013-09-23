@@ -3,20 +3,47 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 
+    ofSetVerticalSync(true);
+    //ofBackground( 100 );
+    
+    ofBackground(0);
+    //ofEnableBlendMode (OF_BLENDMODE_ADD);
+    //CGDisplayHideCursor(0);
+    ofSetBackgroundAuto(false);
+    ofEnableSmoothing();
+    ofHideCursor();
+    ofEnableAlphaBlending();
+    
+    fireworks.push_back(Firework());
+    
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+        
+        
+    fireworks[0].update();
 
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-
+    
+    //ofHideCursor();
+    
+    //ofSaveFrame();
+    
+    ofSetColor(0, 0, 0, 10);
+    ofRect(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
+    
+    for( int i=0; i<fireworks.size(); i++ ){
+        fireworks[i].draw();
+    }
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
 
 }
 
