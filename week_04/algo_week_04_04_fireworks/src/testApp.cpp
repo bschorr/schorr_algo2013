@@ -26,7 +26,7 @@ void testApp::update(){
     
     float sorting = ofRandom(30);
     
-    if (fireworks.size() < 5 && sorting < 1) {
+    if (fireworks.size() < 6 && sorting < 1) {
         
     fireworks.push_back(Firework());
 
@@ -55,7 +55,7 @@ void testApp::draw(){
     
     //ofSaveFrame();
     
-    ofSetColor(0, 0, 0, 30);
+    ofSetColor(0, 0, 0, 20);
     ofRect(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
     
     for( vector<Firework>::iterator it=fireworks.begin(); it!=fireworks.end(); ){

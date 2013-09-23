@@ -26,6 +26,7 @@ public:
     bool bIsDead;
     float dieCount;
     float noise;
+    ofColor color;
     
     
     

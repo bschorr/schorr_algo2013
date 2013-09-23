@@ -25,6 +25,7 @@ Firework::Firework() {
     }
     
     bIsDead = false;
+    color.setHsb(ofRandom(50, 150), 200, 255);
     
     
 }
@@ -84,7 +85,7 @@ void Firework::update(float _noise) {
 void Firework::draw() {
     
     
-    ofSetColor(255, dieCount);
+    ofSetColor(color, dieCount);
     
     
     for( vector<Mover>::iterator it=moverList.begin(); it!=moverList.end(); ){
