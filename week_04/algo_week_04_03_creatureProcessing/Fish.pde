@@ -10,7 +10,7 @@ class Fish {
   float prevAngleInDegrees;
   float catchUpSpeed;
 
-  FloatList rectH = new FloatList();
+  float [] rectH = new float [0] ;
   FloatList posY = new FloatList();
 
 
@@ -25,7 +25,7 @@ class Fish {
         float tempRectH = abs (sin (0.1 * i * PI) * size);
         if ( tempRectH < size/6 ) tempRectH = size/6;
         
-        rectH.append(tempRectH);
+        rectH = append(rectH, tempRectH);
         
     }
     
@@ -61,7 +61,7 @@ class Fish {
         for ( int i = 0; i < 13; i ++ ) {
         
             //int index = int (i*10);
-            rect ((i * (size/6)), posY.get(i), size/10, rectH.get(i));
+            rect ((i * (size/6)), posY.get(i), size/10, rectH[i]);
         
         }
     
