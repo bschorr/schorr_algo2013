@@ -76,9 +76,21 @@ void Fish::xenoToPoint(float catchX, float catchY){
     speed = ofDist(catchX, catchY, pos.x, pos.y) / 300;
     speed = ofClamp(speed, 0.1, 1);
     
- //   if (angleInDegrees < 30 && prevAngleInDegrees < 30)
+    if (angleInDegrees < -90 && prevAngleInDegrees > 90) {
+        
+        prevAngleInDegrees += angleInDegrees - 180;
+        
+    }
     
-    //angleInDegrees = angleInDegrees * 0.1 + prevAngleInDegrees * 0.9;
+    if (angleInDegrees > 90 && prevAngleInDegrees < -90) {
+        
+        prevAngleInDegrees += 360;
+        
+    }
+    
+    angleInDegrees = angleInDegrees * 0.2 + prevAngleInDegrees * 0.8;
     prevAngleInDegrees = angleInDegrees;
+    
+    cout << angleInDegrees << endl;
     
 }
