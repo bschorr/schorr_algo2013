@@ -1,0 +1,15 @@
+<Widget>
+    <Kind>4</Kind>
+    <Name>Damping</Name>
+    <Value>0.973891616</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>Acceleration</Name>
+    <Value>0.000748177</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>Multiplier</Name>
+    <Value>44.827587128</Value>
+</Widget>
