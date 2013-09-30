@@ -4,6 +4,7 @@
 void testApp::setup(){
 
     ofSetVerticalSync(true);
+    ofSetFrameRate(60);
     //ofBackground( 100 );
     
     ofBackground(0);
@@ -62,6 +63,8 @@ void testApp::draw(){
         it->draw();
         it++;
     }
+    
+    ofDrawBitmapString (ofToString(ofGetFrameRate()), ofPoint (20, 20));
 
 }
 

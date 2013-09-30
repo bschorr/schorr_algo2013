@@ -47,7 +47,7 @@ void Mover::draw() {
     //ofCircle( pos, 1 );
         
     if (pos != prevPos) {
-    ofLine(prevPos, pos);        
+    ofLine(prevPos, pos);
     }
     
 }
