@@ -25,6 +25,9 @@ void Mover::update(float _damping, float _accelMult) {
     damping= _damping;
     accelMult = _accelMult;
     
+    damping = ofMap( damping, 1, 10, 1.0, 0.9 );
+    accelMult = ofMap( accelMult, 1, 10, 0.00001, 0.01);
+    
     if (pos != prevPos) {
     prevPos = pos;
         if (counter < 255) {

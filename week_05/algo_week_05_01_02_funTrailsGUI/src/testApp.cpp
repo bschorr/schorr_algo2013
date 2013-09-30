@@ -11,6 +11,16 @@ void testApp::setup(){
     
     //GUI Settings
     
+    /*
+     
+     Some cool values for Damping, Acceleration and Explosion, respectively:
+     
+     1.5 / 1.5 / 10
+     1.5 / 5.0 / 50
+     1.0 / 6.5 / 3
+     
+     */
+    
     gui = new ofxUICanvas;
     gui->addLabel("Particle Controller");
     gui->addSpacer();
@@ -18,9 +28,9 @@ void testApp::setup(){
     
     gui->setColorBack(ofColor(100, 100));
     gui->setWidgetColor(OFX_UI_WIDGET_COLOR_BACK, ofColor(255, 100));
-    gui->addSlider("Damping", 0.9, 1.0, 0.95);
-    gui->addSlider("Acceleration", 0.00001, 0.01, 0.001);
-    gui->addSlider("Multiplier", 0, 50, 10);
+    gui->addSlider("Damping", 1, 10, 5);
+    gui->addSlider("Acceleration", 1, 10, 3);
+    gui->addSlider("Explosion", 0, 50, 10);
     
     ofAddListener(gui->newGUIEvent,this,&testApp::onGuiEvent);
     gui->loadSettings("guiSettings.xml");
@@ -62,7 +72,7 @@ void testApp::onGuiEvent(ofxUIEventArgs &e) {
         
         cout << "Got a message! " << name << " - " << mySlider->getValue() << endl;
         
-    }else if( name == "Multiplier" ){
+    }else if( name == "Explosion" ){
         ofxUISlider *mySlider = (ofxUISlider *)e.widget;
         multiplier = mySlider->getScaledValue();
         
