@@ -8,7 +8,7 @@ void testApp::setup(){
     ofEnableBlendMode(OF_BLENDMODE_ADD);
     img.loadImage("texture2.png");
     
-    for ( int i = 0; i < 100; i++) {
+    for ( int i = 0; i < 500; i++) {
         
         ants.push_back(Ant());
         
