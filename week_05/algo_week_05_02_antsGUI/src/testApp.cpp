@@ -38,6 +38,7 @@ void testApp::draw(){
     std::vector<Ant>::iterator p ;
     for ( p = ants.begin() ; p != ants.end() ; p++ ) {
         
+        ofSetColor(p->color);
         p->draw( img );
         
     }

@@ -15,12 +15,15 @@ Ant::Ant () {
     vel.set(ofRandom(-1, 1), ofRandom(-1, 1));
     vel.normalize();
     
+    noiseSeed = ofRandom(1000);
+    
+    color.setHsb(ofRandom(0, 10), 255, 255);
+    
 }
 
 void Ant::update( vector <Ant> _ants ) {
     
     minDist = 1000;
-    chosenOne = -1;
     
     vector <Ant> ants = _ants;
     
@@ -33,6 +36,9 @@ void Ant::update( vector <Ant> _ants ) {
         if ( dist != 0 && dist < minDist ) {
             
             minDist = dist;
+            //size = 50 - minDist;
+            size = minDist;
+            size = ofClamp(size, 50, 500);
             
             ofVec2f delta = ofVec2f(p->pos.x - pos.x , p->pos.y - pos.y);
             
@@ -55,7 +61,9 @@ void Ant::update( vector <Ant> _ants ) {
     
     //vel += accel;
     vel *= 3;
-    vel.rotate(ofRandom(-10, 10));
+    float noise = ofNoise(noiseSeed + ofGetElapsedTimef());
+    noise = ofMap(noise, 0.0, 1.0, -1.0, 1.0);
+    vel.rotate(noise * 2);
     pos += vel;
     
 }
@@ -63,7 +71,7 @@ void Ant::update( vector <Ant> _ants ) {
 void Ant::draw( ofImage _img ) {
     
     //ofRect(pos, 3, 3);
-    _img.draw(pos.x, pos.y);
+    _img.draw(pos.x, pos.y, size, size);
 
     
 }

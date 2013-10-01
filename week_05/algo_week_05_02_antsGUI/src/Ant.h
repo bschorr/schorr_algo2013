@@ -25,6 +25,8 @@ public:
     
     float dist;
     float minDist;
-    int chosenOne;
+    float size;
+    int noiseSeed;
+    ofColor color;
     
 };
