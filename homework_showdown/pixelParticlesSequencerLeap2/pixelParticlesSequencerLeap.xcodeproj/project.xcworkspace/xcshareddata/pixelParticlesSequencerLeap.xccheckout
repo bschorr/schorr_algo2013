@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1399AF4D-1D9F-496C-A2A1-F48806CE9B0B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>pixelParticlesSequencerLeap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1F392CF3-1E30-4E1D-A7ED-239C219D8CB5</key>
+		<string>https://github.com/bschorr/circularSoundSequencerLeap.git</string>
+		<key>F838EA08-668C-4268-AD18-C3961E29BC83</key>
+		<string>https://github.com/ofTheo/ofxLeapMotion</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>pixelParticlesSequencerLeap.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1F392CF3-1E30-4E1D-A7ED-239C219D8CB5</key>
+		<string>../..</string>
+		<key>F838EA08-668C-4268-AD18-C3961E29BC83</key>
+		<string>../../../../../addons/ofxLeapMotion</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bschorr/circularSoundSequencerLeap.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1F392CF3-1E30-4E1D-A7ED-239C219D8CB5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F838EA08-668C-4268-AD18-C3961E29BC83</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxLeapMotion</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1F392CF3-1E30-4E1D-A7ED-239C219D8CB5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pixelParticlesSequencerLeap</string>
+		</dict>
+	</array>
+</dict>
+</plist>
