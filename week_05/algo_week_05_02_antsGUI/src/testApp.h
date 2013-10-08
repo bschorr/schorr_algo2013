@@ -22,5 +22,4 @@ class testApp : public ofBaseApp{
     
     vector <Ant>  ants;
     ofImage img;
-		
 };

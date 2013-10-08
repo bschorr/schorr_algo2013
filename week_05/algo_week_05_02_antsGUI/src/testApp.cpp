@@ -4,7 +4,7 @@
 void testApp::setup(){
     
     ofSetVerticalSync(true);
-    ofSetFrameRate (30);
+    //ofSetFrameRate (30);
     ofEnableBlendMode(OF_BLENDMODE_ADD);
     img.loadImage("texture2.png");
     
@@ -26,7 +26,7 @@ void testApp::update(){
         
     }
     
-    cout << ofGetFrameRate() << endl;
+    //cout << ofGetFrameRate() << endl;
 
 }
 
@@ -42,6 +42,8 @@ void testApp::draw(){
         p->draw( img );
         
     }
+    
+    ofDrawBitmapString( ofToString (ofGetFrameRate()), 10, 10);
 
 }
 

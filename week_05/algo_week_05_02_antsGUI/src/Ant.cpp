@@ -21,12 +21,9 @@ Ant::Ant () {
     
 }
 
-void Ant::update( vector <Ant> _ants ) {
+void Ant::update( vector <Ant> &ants ) {
     
     minDist = 1000;
-    
-    vector <Ant> ants = _ants;
-    
     
     std::vector<Ant>::iterator p ;
     for ( p = ants.begin() ; p != ants.end() ; p++ )
@@ -68,10 +65,10 @@ void Ant::update( vector <Ant> _ants ) {
     
 }
 
-void Ant::draw( ofImage _img ) {
+void Ant::draw( ofImage &img ) {
     
     //ofRect(pos, 3, 3);
-    _img.draw(pos.x, pos.y, size, size);
+    img.draw(pos.x, pos.y, size, size);
 
     
 }

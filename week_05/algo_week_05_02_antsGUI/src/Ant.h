@@ -16,8 +16,8 @@ public:
     Ant ();
     Ant ( ofPoint _pos, ofVec2f _vel );
     
-    void update( vector <Ant> _ants );
-    void draw( ofImage _img);
+    void update( vector <Ant> &ants );
+    void draw( ofImage &img);
     
     ofPoint pos;
     ofVec2f vel;
