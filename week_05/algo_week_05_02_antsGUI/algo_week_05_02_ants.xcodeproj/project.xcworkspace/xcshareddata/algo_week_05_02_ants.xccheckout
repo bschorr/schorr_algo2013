@@ -5,31 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4A404387-610D-4D74-B4B4-9CBE388A0695</string>
+	<string>4E598E63-9BC3-4C22-A387-4D2D16D12EB4</string>
 	<key>IDESourceControlProjectName</key>
 	<string>algo_week_05_02_ants</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>55BA1962-1EBD-4758-823E-6C9930E48F9A</key>
+		<string>https://github.com/bschorr/schorr_algo2013</string>
 		<key>89281A1B-88EB-487A-BC2A-A434885BCCE3</key>
 		<string>https://github.com/rezaali/ofxUI.git</string>
-		<key>FF62D4D6-8B57-4AF1-AE7D-87ECBB3120CE</key>
-		<string>https://github.com/bschorr/schorr_algo2013.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>week_05/algo_week_05_02_antsGUI/algo_week_05_02_ants.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>55BA1962-1EBD-4758-823E-6C9930E48F9A</key>
+		<string>../../../..</string>
 		<key>89281A1B-88EB-487A-BC2A-A434885BCCE3</key>
 		<string>../../../../../addons/ofxUI</string>
-		<key>FF62D4D6-8B57-4AF1-AE7D-87ECBB3120CE</key>
-		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/bschorr/schorr_algo2013.git</string>
+	<string>https://github.com/bschorr/schorr_algo2013</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FF62D4D6-8B57-4AF1-AE7D-87ECBB3120CE</string>
+	<string>55BA1962-1EBD-4758-823E-6C9930E48F9A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -44,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FF62D4D6-8B57-4AF1-AE7D-87ECBB3120CE</string>
+			<string>55BA1962-1EBD-4758-823E-6C9930E48F9A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>schorr_algo2013</string>
 		</dict>

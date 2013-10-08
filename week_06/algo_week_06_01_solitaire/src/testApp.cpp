@@ -51,23 +51,25 @@ void testApp::update(){
         if ( counter > cards.size() ) {
             initCounter --;
             counter = initCounter;
+            }
         }
-    }
     }
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    if (drawKings > 0) {
-        for (int i = cards.size()-1; i > 0; i-=13) {
-            cards[i].draw(back);
-        }
-        drawKings --;
-    }
-    
-    cards[counter].draw(back);
+    if (initCounter >= 0) {
 
+        if (drawKings > 0) {
+            for (int i = cards.size()-1; i > 0; i-=13) {
+                cards[i].draw(back);
+            }
+            drawKings --;
+        }
+    
+        cards[counter].draw(back);
+    }
 }
 
 //--------------------------------------------------------------
