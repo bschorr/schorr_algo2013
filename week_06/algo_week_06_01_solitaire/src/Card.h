@@ -24,7 +24,7 @@ public:
     ofVec3f rot;
     ofVec3f rotInc;
     
-    int rotMult = 1;
+    int rotMult = 4;
     bool face;
     
     float angleY;

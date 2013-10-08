@@ -40,22 +40,11 @@ void testApp::update(){
     
     timer++;
     cout << initCounter << endl;
+    cout << counter << endl;
     
     if (initCounter >= 0) {
     
-    if (cards[counter].pos.x > ofGetWindowWidth() || cards[counter].pos.x < 0 || cards[counter].pos.y > ofGetWindowHeight() || cards[counter].pos.y < 0 ) {
-        
-        counter += 13;
-        
-//        if ( counter > cards.size() ) {
-//            initCounter --;
-//            counter = initCounter;
-//        }
-//        
-    }
-    }
-    
-    if (timer >= 180) {
+    if (timer >= 120) {
         counter += 13;
         timer = 0;
         
@@ -63,6 +52,7 @@ void testApp::update(){
             initCounter --;
             counter = initCounter;
         }
+    }
     }
 }
 
