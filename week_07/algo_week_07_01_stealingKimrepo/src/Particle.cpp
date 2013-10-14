@@ -13,11 +13,26 @@
 Particle::Particle(){
     setInitCondition(ofGetWindowWidth()/2, ofGetWindowHeight()/2, 0, 0);
     damping = 0.09f;
-    size = 1.1;
-    r = ofRandom(0,80);
-    g = ofRandom(50,120);
-    b = ofRandom(100,140);
+    size = 20;
+//    r = ofRandom(0,80);
+//    g = ofRandom(50,120);
+//    b = ofRandom(100,140);
     
+      float colChoice = ofRandomf();
+    
+    if (colChoice > 0) {
+    
+      r = 0;
+      g = 255;
+      b = 0;
+    
+    } else {
+    
+      r = 255;
+      g = 0;
+      b = 255;
+        
+    }
 }
 
 void Particle::resetForce(){
@@ -59,38 +74,6 @@ void Particle::addAttraction( float px, float py, float radius, float strength )
     }
 }
 
-void Particle::addClockwise( float px, float py, float radius, float strength ){
-    
-    ofVec2f posOfForce;
-    posOfForce.set(px,py);
-    
-    ofVec2f diff = pos - posOfForce;
-    
-    if (diff.length() < radius){
-        float percent = 1 - (diff.length() / radius );
-        diff.normalize();
-        force.x -= diff.x * percent * strength;
-        force.y += diff.y * percent * strength;
-    }
-}
-
-void Particle::addCounterClockwise( float px, float py, float radius, float strength){
-    
-    
-	ofVec2f posOfForce;
-	posOfForce.set(px, py);
-    
-	ofVec2f diff = pos - posOfForce;
-    
-	if (diff.length() < radius){
-		float percent = 1 - (diff.length() / radius);
-		diff.normalize();
-		force.x += diff.y * percent * strength;
-		force.y -= diff.x * percent * strength;
-	}
-    
-}
-
 void Particle::trail(float catchX, float catchY){
  
     float catchUpSpeed = 0.5f;
@@ -110,5 +93,5 @@ void Particle::update(){
 
 void Particle::draw( ofImage &image ){
     ofSetColor(r, g, b);
-    image.draw ( pos );
+    image.draw ( pos, size, size );
 }

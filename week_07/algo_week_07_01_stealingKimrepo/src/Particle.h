@@ -27,8 +27,6 @@ public:
     
     void addRepulsion(float px, float py, float radius, float strength);
     void addAttraction( float px, float py, float radius, float strength);
-    void addClockwise( float px, float py, float radius, float strength);
-    void addCounterClockwise( float px, float py, float radius, float strength);
     void trail(float catchX, float catchY);
     
     float damping;
@@ -36,6 +34,7 @@ public:
     
     int r, g, b;
     float dist;
+    
     
     
 };

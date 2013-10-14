@@ -24,4 +24,5 @@ class testApp : public ofBaseApp{
 	
 	int invisiCol;
     ofImage sprite;
+    ofFbo myFbo;
 };
