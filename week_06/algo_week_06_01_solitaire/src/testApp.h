@@ -24,6 +24,6 @@ class testApp : public ofBaseApp{
     int timer, counter;
     int initCounter;
     int drawKings;
-    ofImage back;
+    ofImage realBack;
     ofVec3f gravity;
 };
