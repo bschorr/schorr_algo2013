@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "wk6_attractorRepulsor.app"
+               BuildableName = "algo_week_07_01_stealingKimrepo.app"
                BlueprintName = "algo_week_07_01_stealingKimrepo"
                ReferencedContainer = "container:algo_week_07_01_stealingKimrepo.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "wk6_attractorRepulsor.app"
+            BuildableName = "algo_week_07_01_stealingKimrepo.app"
             BlueprintName = "algo_week_07_01_stealingKimrepo"
             ReferencedContainer = "container:algo_week_07_01_stealingKimrepo.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "wk6_attractorRepulsor.app"
+            BuildableName = "algo_week_07_01_stealingKimrepo.app"
             BlueprintName = "algo_week_07_01_stealingKimrepo"
             ReferencedContainer = "container:algo_week_07_01_stealingKimrepo.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "wk6_attractorRepulsor.app"
+            BuildableName = "algo_week_07_01_stealingKimrepo.app"
             BlueprintName = "algo_week_07_01_stealingKimrepo"
             ReferencedContainer = "container:algo_week_07_01_stealingKimrepo.xcodeproj">
          </BuildableReference>
