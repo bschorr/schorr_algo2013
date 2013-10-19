@@ -6,10 +6,10 @@ void testApp::setup(){
     ofSetVerticalSync(true);
     ofBackground(0);
     //ofSetBackgroundAuto(false);
-    ofEnableBlendMode(OF_BLENDMODE_ADD);
+    //ofEnableBlendMode(OF_BLENDMODE_ADD);
     sprite.loadImage("texture2.png");
     
-    for (int i = 0; i < 1000; i++){
+    for (int i = 0; i < 25000; i++){
         Particle myParticle;
         myParticle.setInitCondition(ofRandom(0,1000), ofRandom(0,1000), 0, 0);
         myParticle.damping = ofRandom(0.01,0.05);

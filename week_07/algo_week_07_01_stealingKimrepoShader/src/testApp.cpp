@@ -56,8 +56,8 @@ void testApp::draw(){
         for (vector<Particle>::iterator it = particles.begin(); it != particles.end(); it++){
 
             it -> resetForce();
-            it -> addAttraction(thisMouseX, thisMouseY, 1000, 0.1);
-            it -> addRepulsion(thisMouseX, thisMouseY, 100, 80);
+            it -> addAttraction(thisMouseX, thisMouseY, 1000, 0.05);
+            it -> addRepulsion(thisMouseX, thisMouseY, 70, 80);
             it -> addDamping();
             it -> update();
             
@@ -106,8 +106,8 @@ void testApp::draw(){
     
     ofSetColor(255);
     fboBlurTwoPass.draw(0, 0);
-    ofDrawBitmapString(ofToString(ofGetFrameRate()), 10, 10);
-
+    //ofDrawBitmapString(ofToString(ofGetFrameRate()), 10, 10);
+    
 }
 
 //--------------------------------------------------------------
