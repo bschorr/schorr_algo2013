@@ -10,7 +10,7 @@ void testApp::setup(){
     
     particleList.clear();
     
-    ofBackground(0);
+    //ofBackground(0);
     
     counter = 0;
     showField = true;
@@ -48,6 +48,9 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    
+    ofBackgroundGradient(ofColor (150, 230, 255), ofColor(50, 100, 130), OF_GRADIENT_CIRCULAR);
+    
     ofSetColor(255);
     if (showField) {
      
