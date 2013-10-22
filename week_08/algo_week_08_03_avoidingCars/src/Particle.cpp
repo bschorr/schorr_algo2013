@@ -42,6 +42,7 @@ void Particle::seek() {
         desired *= maxSpeed;
     }
 
+    //ofVec2f steer = desired - vel;
     ofVec2f steer = desired - vel;
     steer.limit( maxForce );
     
@@ -50,7 +51,7 @@ void Particle::seek() {
 
 void Particle::avoid( Particle otherCar ) {
     
-    float crashRadius = 100.0;
+    float crashRadius = 60.0;
     ofVec2f crashDistance = otherCar.pos - pos;
     float crashAngle = crashDistance.angle(vel);
     
@@ -66,10 +67,12 @@ void Particle::avoid( Particle otherCar ) {
         
         float pct = 1 - (diff.length() / crashRadius);
 		diff.normalize();
+        diff *= pct;
         //diff.limit(maxForce);
-        addForce(diff*pct);
+        //addForce(diff*pct);
+        addForce( diff );
         isAvoided = true;
-        
+    
     }
     
 }

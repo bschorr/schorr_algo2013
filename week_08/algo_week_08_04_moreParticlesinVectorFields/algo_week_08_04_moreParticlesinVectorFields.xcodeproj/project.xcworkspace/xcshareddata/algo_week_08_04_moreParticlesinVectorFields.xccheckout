@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E4BEB54C-E790-45B1-BA12-0C0B9A6A2C87</string>
+	<key>IDESourceControlProjectName</key>
+	<string>algo_week_08_04_moreParticlesinVectorFields</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1AE98416-C0A7-4447-8C1D-B02130024429</key>
+		<string>https://github.com/bschorr/schorr_algo2013</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>week_08/algo_week_08_04_moreParticlesinVectorFields/algo_week_08_04_moreParticlesinVectorFields.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1AE98416-C0A7-4447-8C1D-B02130024429</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bschorr/schorr_algo2013</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1AE98416-C0A7-4447-8C1D-B02130024429</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1AE98416-C0A7-4447-8C1D-B02130024429</string>
+			<key>IDESourceControlWCCName</key>
+			<string>schorr_algo2013</string>
+		</dict>
+	</array>
+</dict>
+</plist>
