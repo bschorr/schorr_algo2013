@@ -2,7 +2,8 @@
 //  FlowField.h
 //  VectorField
 //
-//  Created by Charlie Whitney on 10/7/13.
+//  Created by Bernardo Schorr on 10/21/13.
+//  Modified from Charlie Whitney on 10/7/13.
 //
 //
 
