@@ -40,7 +40,7 @@ void Particle::update(int i, int &countOne, int &countTwo) {
             prevPos = pos;
             pos = pos*xenoRandomPos + dest*xenoRandomDest;
             size.x = 10*(pos.x-prevPos.x);
-            float colorSet = ofMap(pos.x, 0s, dest.x, 0, 100);
+            float colorSet = ofMap(pos.x, 0, dest.x, 0, 100);
             color.set(0, colorSet);
             
             if (size.x < 10) size.x = 10;
