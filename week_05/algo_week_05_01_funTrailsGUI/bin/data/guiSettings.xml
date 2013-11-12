@@ -1,15 +1,15 @@
 <Widget>
     <Kind>4</Kind>
     <Name>Damping</Name>
-    <Value>1.177339911</Value>
+    <Value>1.310344815</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>Acceleration</Name>
-    <Value>1.133004904</Value>
+    <Value>1.088669896</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>Explosion</Name>
-    <Value>49.261085510</Value>
+    <Value>10.344827652</Value>
 </Widget>

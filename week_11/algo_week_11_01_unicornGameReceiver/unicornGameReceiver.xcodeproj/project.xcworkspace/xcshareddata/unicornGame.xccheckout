@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>19D0212E-EBD1-4FF9-8B96-430E4230F039</string>
+	<key>IDESourceControlProjectName</key>
+	<string>unicornGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2C6C3989-0E4B-4446-8A08-BE942F4E1BF2</key>
+		<string>https://github.com/bschorr/schorr_algo2013</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>week_11/unicornGameReceiver/unicornGame.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2C6C3989-0E4B-4446-8A08-BE942F4E1BF2</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bschorr/schorr_algo2013</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2C6C3989-0E4B-4446-8A08-BE942F4E1BF2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2C6C3989-0E4B-4446-8A08-BE942F4E1BF2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>schorr_algo2013</string>
+		</dict>
+	</array>
+</dict>
+</plist>
